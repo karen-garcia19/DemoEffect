@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoEffect"
+             x:Class="DemoEffect.MainPage">
+
+    <StackLayout>
+
+        <BoxView WidthRequest="200" HeightRequest="200" Background="Red">
+            <BoxView.Effects>
+                <local:DropShadowEffect/>
+            </BoxView.Effects>
+        </BoxView>
+
+        <!-- Place new controls here -->
+        <Label Text="Welcome to xamarin.Forms!"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand">
+            <Label.Effects>
+                <local:DropShadowEffect/>
+            </Label.Effects>
+        </Label>
+    </StackLayout>
+</ContentPage>
